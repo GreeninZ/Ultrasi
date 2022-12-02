@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 619777671}
   - component: {fileID: 619777675}
   - component: {fileID: 619777674}
-  - component: {fileID: 619777676}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -264,21 +263,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!114 &619777676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619777670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c0222ec70fcda647b49a7543ab3ec54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookDirectionVec: {x: 0, y: 0}
-  cam: {fileID: 0}
-  playerRb: {fileID: 0}
 --- !u!1 &1508875935
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +273,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1508875936}
   - component: {fileID: 1508875937}
-  - component: {fileID: 1508875938}
   - component: {fileID: 1508875939}
   m_Layer: 0
   m_Name: Circle
@@ -365,21 +348,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1508875938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1508875935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c0222ec70fcda647b49a7543ab3ec54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookDirectionVec: {x: 0, y: 0}
-  cam: {fileID: 1598949093}
-  playerRb: {fileID: 1508875939}
 --- !u!50 &1508875939
 Rigidbody2D:
   serializedVersion: 4
