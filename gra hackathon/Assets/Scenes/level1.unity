@@ -631,8 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cec2694b0d085b54aaf0ee926d5165fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blokady: []
-  przeciwnicy: []
+  gracz: {fileID: 873521178341871517, guid: c2c811860a434554385bd6092b1dfc30, type: 3}
 --- !u!1 &1198519697
 GameObject:
   m_ObjectHideFlags: 0

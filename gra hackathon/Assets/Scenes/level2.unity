@@ -798,7 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3b3d976bc80724cbae032a7182e473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uciekinier: {fileID: 873521178341871517, guid: c2c811860a434554385bd6092b1dfc30, type: 3}
+  postac: {fileID: 873521178341871517, guid: c2c811860a434554385bd6092b1dfc30, type: 3}
 --- !u!4 &1427406524
 Transform:
   m_ObjectHideFlags: 0

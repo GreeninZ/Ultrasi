@@ -8,11 +8,10 @@ public class przejscie_poziomu : MonoBehaviour
     
     // Start is called before the first frame update
     string []sceny= {"level2", "level3" };
-    Scene NazwaSceny = SceneManager.GetActiveScene();
     string nazwa;
     void Start()
     {
-      nazwa = NazwaSceny.name;
+      nazwa = SceneManager.GetActiveScene().name;
 
     }
 
@@ -29,7 +28,7 @@ public class przejscie_poziomu : MonoBehaviour
          
             int random_scena = Random.Range(0, sceny.Length);
             SceneManager.LoadScene(sceny[random_scena]);
-
+            transform.position = new Vector3(0, 0, 0);
 
 
         }
