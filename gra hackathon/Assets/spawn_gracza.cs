@@ -9,7 +9,7 @@ public class spawn_gracza : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Instantiate(postac, transform.position, Quaternion.identity);
+       
     }
 
     // Update is called once per frame
