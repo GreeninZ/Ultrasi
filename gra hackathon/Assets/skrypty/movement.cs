@@ -7,6 +7,7 @@ public class movement : MonoBehaviour
     public Rigidbody2D playerRb;
     public Vector2 ruch;
     public float speed;
+
    
 
     // Start is called before the first frame update
@@ -19,7 +20,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(transform.position);
+        
         ruszanie();
     }
     private void FixedUpdate()
