@@ -31,7 +31,7 @@ public class przejscie_poziomu : MonoBehaviour
         {
             ilosc_punktow++;
             text.text = ilosc_punktow.ToString();
-            if (ilosc_punktow == 5)
+            if (ilosc_punktow >= 5)
             {
                 SceneManager.LoadScene("wygrana");
                 

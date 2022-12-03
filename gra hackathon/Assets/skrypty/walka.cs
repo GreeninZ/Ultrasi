@@ -23,13 +23,11 @@ public class walka : MonoBehaviour
         //Debug.Log("uderzenie: " + collision.gameObject.name);
         if (collision.gameObject.tag =="enemy" )
         {
-            if (timer > 2)
-            {
-                timer = 0;
+           
                 collision.gameObject.GetComponent<enemyhealtbar>().TakeHit(20);
                 Debug.Log("wiadro");
 
-            }
+            
            
             
         }
