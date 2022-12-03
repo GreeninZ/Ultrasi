@@ -19,7 +19,7 @@ public class walka : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("uderzenie: " + collision.gameObject.name);
+        //Debug.Log("uderzenie: " + collision.gameObject.name);
         if (collision.gameObject.tag =="enemy" && Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("uderzenie: " + collision.gameObject.name);
