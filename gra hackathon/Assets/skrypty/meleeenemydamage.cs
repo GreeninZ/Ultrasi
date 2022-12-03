@@ -20,7 +20,7 @@ public class meleeenemydamage : MonoBehaviour
     {
         if (allowhit)
         {
-            Debug.Log("melee enemy damage");
+           // Debug.Log("melee enemy damage");
         }
         float randomtime = Random.Range(0.5f, 2f);
         Invoke("dodamage", randomtime);

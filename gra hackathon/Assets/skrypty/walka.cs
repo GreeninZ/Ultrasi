@@ -22,7 +22,7 @@ public class walka : MonoBehaviour
         //Debug.Log("uderzenie: " + collision.gameObject.name);
         if (collision.gameObject.tag =="enemy" && Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Debug.Log("uderzenie: " + collision.gameObject.name);
+            //Debug.Log("uderzenie: " + collision.gameObject.name);
         }
     }
     
