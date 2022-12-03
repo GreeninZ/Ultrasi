@@ -6,6 +6,8 @@ TagManager:
   tags:
   - rece
   - enemy
+  - drzwi
+  - otoczenie
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Otoczenie
   - 
   - 
   - 
