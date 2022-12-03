@@ -21,7 +21,7 @@ public class bullet : MonoBehaviour
     {
         mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
        
-        bulletrb.AddForce(mousepos, ForceMode2D.Impulse);
+        bulletrb.AddForce(mousepos * 2, ForceMode2D.Impulse);
         
         
     }

@@ -7,6 +7,7 @@ public class zmianabroni : MonoBehaviour
     public GameObject weapon;
     public GameObject rece;
     private GameObject player;
+    public GameObject maczeta;
     private bool haveweapon = false;
     private GameObject currentweapon;
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class zmianabroni : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && haveweapon == false)
+        if (Input.GetKeyDown(KeyCode.Alpha1) )
         {
             Destroy(currentweapon);
             currentweapon = Instantiate(weapon, transform.position, Quaternion.identity);
@@ -40,6 +41,12 @@ public class zmianabroni : MonoBehaviour
             
             haveweapon = false;
 
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Destroy(currentweapon);
+            currentweapon = Instantiate(maczeta, transform.position, Quaternion.identity);
+            currentweapon.transform.parent = player.transform;
         }
     }
 }
