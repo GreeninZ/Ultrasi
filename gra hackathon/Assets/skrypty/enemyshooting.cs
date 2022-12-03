@@ -9,6 +9,7 @@ public class enemyshooting : MonoBehaviour
     private float timer;
     public GameObject kartofel;
     public Transform shootpoint;
+   
     
     void Start()
     {
@@ -20,7 +21,7 @@ public class enemyshooting : MonoBehaviour
     void Update()
     {
         target = GameObject.FindWithTag("Player").transform;
-        Debug.Log(target);
+        //Debug.Log(target);
         if (target != null)
         {
             //Debug.Log(shootpoint.position);

@@ -1572,6 +1572,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3203589437914905411, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3203589437914905411, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281393551436876265, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398188717609545259, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827713512054165097, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827713512054165097, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059504206018885585, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9098642490147732626, guid: ff8f9055cc87bd84483c76bcdb669bdd, type: 3}
       propertyPath: m_Name
       value: Player

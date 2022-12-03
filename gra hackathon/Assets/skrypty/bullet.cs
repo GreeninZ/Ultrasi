@@ -10,11 +10,13 @@ public class bullet : MonoBehaviour
     private Vector3 mousepos;
     private float bulletpower = 15f;
     private bool zrobione = false;
+   // public enemyhealtbar enemyhb;
     void Start()
     {
         bulletrb = gameObject.GetComponent<Rigidbody2D>();
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         
+
     }
 
     // Update is called once per frame
@@ -33,6 +35,11 @@ public class bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "enemy")
+        {
+            //Debug.Log("Dziala");
+           collision.gameObject.GetComponent<enemyhealtbar>().TakeHit(20);
+        }
         Destroy(gameObject);
     }
 }

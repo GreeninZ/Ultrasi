@@ -7,22 +7,21 @@ using System;
 public class healthbarbehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
-    public TMP_Text tekst;
+    [SerializeField] private Slider healthbar; 
+    
     public float hitpoints;
-    public float maxhitpoints = 20;
+    public float maxhitpoints = 100;
     void Start()
     {
         hitpoints = maxhitpoints;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        tekst.text = hitpoints+ "/" + maxhitpoints;    
-    }
+   
     public void sethealth(float health, float maxhealth)
     {
-        hitpoints = health;
+        healthbar.value = hitpoints/maxhitpoints;
+       
+        hitpoints = health; 
         maxhitpoints = maxhealth;
     }
     
