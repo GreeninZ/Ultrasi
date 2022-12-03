@@ -10,7 +10,7 @@ public class przenies_scene : MonoBehaviour
 
     public void przenies_do_gry()
     {
-        SceneManager.LoadScene("gra");
+        SceneManager.LoadScene("level1");
     }
 
 }
