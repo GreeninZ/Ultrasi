@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class przejscie_poziomu : MonoBehaviour
 {
-    
+
     // Start is called before the first frame update
+    private int ilosc_punktow = 0;
     string []sceny= {"level2", "level3" };
     string nazwa;
     void Start()
@@ -29,6 +30,8 @@ public class przejscie_poziomu : MonoBehaviour
             int random_scena = Random.Range(0, sceny.Length);
             SceneManager.LoadScene(sceny[random_scena]);
             transform.position = new Vector3(0, 0, 0);
+            ilosc_punktow++;
+            Debug.Log(ilosc_punktow);
 
 
         }

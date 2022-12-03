@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class koniec_poziomu : MonoBehaviour
 {
-    //public GameObject[] blokady;
+    public GameObject[] blokady;
     //public GameObject[] przeciwnicy;
     void Start()
     {
@@ -14,26 +14,30 @@ public class koniec_poziomu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // SprawdzCzyZyjaPrzeciwnicy();
+       SprawdzCzyZyjaPrzeciwnicy();
     }
 
 
-    //void SprawdzCzyZyjaPrzeciwnicy()
-    //{
-    //    var counter = 0;
-    //    foreach(var przeciwnik in przeciwnicy)
-    //    {
-    //        //if(przeciwnik.zycie==0)
-    //        //{
-    //        //    counter++;
-    //        //}
-    //    }
-    //    if(counter == przeciwnicy.Length - 1)
-    //    {
-    //        foreach (var blokada in blokady)
-    //        {
-    //            Destroy(blokada);
-    //        }
-    //    }
-    //}
+    void SprawdzCzyZyjaPrzeciwnicy()
+    {
+        var counter = false;
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            counter = true;
+        }
+        //foreach (var przeciwnik in przeciwnicy)
+        //{
+        //    //if(przeciwnik.zycie==0)
+        //    //{
+        //    //    counter++;
+        //    //}
+        //}
+        if (counter == true)
+        {
+            foreach (var blokada in blokady)
+            {
+                Destroy(blokada);
+            }
+        }
+    }
 }

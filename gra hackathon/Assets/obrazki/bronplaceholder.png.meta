@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 158f74206769951478cd92c94a1fb881
+<<<<<<<< HEAD:gra hackathon/Assets/obrazki/bronplaceholder.png.meta
+guid: df553b28aa5667f4d905185e34513b16
+========
+guid: 931160e63ada85f4d935a4b13fe4c226
+>>>>>>>> d20d077104e8c940997ec5f9904a9f953a857822:gra hackathon/Assets/obrazki/pixil-frame-0 (4).png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -91,18 +95,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
