@@ -15,6 +15,7 @@ public class movement : MonoBehaviour
     {
        
         playerRb = gameObject.GetComponent<Rigidbody2D>();
+        DontDestroyOnLoad(gameObject);
     }
    
 
