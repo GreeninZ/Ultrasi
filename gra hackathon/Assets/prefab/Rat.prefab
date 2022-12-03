@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4445876807012504025}
   - component: {fileID: 509767920097849674}
   - component: {fileID: 2217225345507083685}
+  - component: {fileID: 4010047486397092520}
+  - component: {fileID: 7480326665461493279}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -51,7 +53,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0265944, y: -0.0005840361}
-  m_Size: {x: 0.67423356, y: 0.6742336}
+  m_Size: {x: 1, y: 1}
   m_Direction: 0
 --- !u!114 &-2334999076717303963
 MonoBehaviour:
@@ -150,6 +152,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aipath: {fileID: 4445876807012504025}
+--- !u!114 &4010047486397092520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833977344141080439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451304775ef1d174cbcbe2edd87dc2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &7480326665461493279
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833977344141080439}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.2, y: 1.2}
+  m_Direction: 0
 --- !u!1 &3255822776912074677
 GameObject:
   m_ObjectHideFlags: 0
