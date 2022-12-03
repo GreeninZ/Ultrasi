@@ -201,3 +201,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: 1576890611239073112, guid: 632d7e73cd484ce4c912f9b03b5cd29f, type: 3}
   rece: {fileID: 5469243142086617321, guid: 10ec54682190b28428f0d236b0667db1, type: 3}
+  maczeta: {fileID: 0}

@@ -20,7 +20,8 @@ public class celowanie : MonoBehaviour
         Vector3 aimdirection = (mousepos - transform.position).normalized;
         float angle = Mathf.Atan2(aimdirection.y, aimdirection.x) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(0, 0, angle);
-
+        
+        
     }
 }
 

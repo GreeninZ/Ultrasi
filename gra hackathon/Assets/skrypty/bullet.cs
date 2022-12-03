@@ -9,6 +9,7 @@ public class bullet : MonoBehaviour
     public Camera cam;
     private Vector3 mousepos;
     private float bulletpower = 15f;
+    private bool zrobione = false;
     void Start()
     {
         bulletrb = gameObject.GetComponent<Rigidbody2D>();
@@ -19,9 +20,14 @@ public class bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
-       
-        bulletrb.AddForce(mousepos * 2, ForceMode2D.Impulse);
+        if (zrobione ==false)
+        {
+            mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+            bulletrb.AddForce(mousepos * 4, ForceMode2D.Impulse);
+            zrobione = true;
+        }
+        
         
         
     }

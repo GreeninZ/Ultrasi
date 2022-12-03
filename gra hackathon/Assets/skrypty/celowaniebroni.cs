@@ -12,18 +12,13 @@ public class celowaniebroni : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        firepoint = transform.Find("firepoint");
-        bulletrb = gameObject.GetComponent<Rigidbody2D>();
-        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 aimdirection = (mousepos - transform.position).normalized;
-        float angle = Mathf.Atan2(aimdirection.y, aimdirection.x) * Mathf.Rad2Deg;
-        transform.eulerAngles = new Vector3(0, 0, angle);
+        
         strzelanie();
         
 

@@ -6,16 +6,16 @@ public class zmianabroni : MonoBehaviour
 {
     public GameObject weapon;
     public GameObject rece;
-    private GameObject player;
+    private GameObject empty;
     public GameObject maczeta;
     private bool haveweapon = false;
     private GameObject currentweapon;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player");
+        empty = GameObject.Find("empty");
         currentweapon = Instantiate(rece, transform.position, Quaternion.identity);
-        currentweapon.gameObject.transform.parent = player.transform;
+        currentweapon.gameObject.transform.parent = empty.transform;
 
        
     }
@@ -27,7 +27,7 @@ public class zmianabroni : MonoBehaviour
         {
             Destroy(currentweapon);
             currentweapon = Instantiate(weapon, transform.position, Quaternion.identity);
-            currentweapon.transform.parent = player.transform;
+            currentweapon.transform.parent = empty.transform;
             haveweapon = true;
             
             
@@ -36,7 +36,7 @@ public class zmianabroni : MonoBehaviour
         {
             Destroy(currentweapon);
             currentweapon = Instantiate(rece, transform.position, Quaternion.identity);
-            currentweapon.transform.parent = player.transform;
+            currentweapon.transform.parent = empty.transform;
             //Instantiate(weapon, transform.position, Quaternion.identity);
             
             haveweapon = false;
@@ -46,7 +46,7 @@ public class zmianabroni : MonoBehaviour
         {
             Destroy(currentweapon);
             currentweapon = Instantiate(maczeta, transform.position, Quaternion.identity);
-            currentweapon.transform.parent = player.transform;
+            currentweapon.transform.parent = empty.transform;
         }
     }
 }
