@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/level.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/scena_glowna.unity
     guid: 0ba7e1cf10a029743b27a0363db1a25d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/gra.unity
     guid: 0cd9f32e14493764a8f36ee20bf48e10
   - enabled: 1
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level3.unity
     guid: 487b2f14f2d56e743acb2e00d8f6c20e
+  - enabled: 1
+    path: Assets/Scenes/wygrana.unity
+    guid: 05f0259afcfc06f42965d7c5d88c218e
   m_configObjects: {}
